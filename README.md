@@ -1,1 +1,1 @@
-# Je-dzcy-Szopokalipsy
+# Jezdzcy-Szopokalipsy
