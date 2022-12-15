@@ -11,7 +11,7 @@ html {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1268px) {
   html {
     font-size: 16px;
   }
@@ -26,7 +26,7 @@ body {
 *:focus {
   outline: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1268px) {
   *:focus {
     outline-color: rgb(212, 20, 67);
     outline-offset: 0;
