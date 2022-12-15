@@ -1,0 +1,26 @@
+html {
+  font-size: 12px;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+body {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+*:focus {
+  outline: none;
+  @media screen and (min-width: $desktop) {
+    outline-color: $brand-color;
+    outline-offset: 0;
+    outline-style: solid;
+    outline-width: 1px;
+    border: none;
+    border-radius: 0.2%;
+  }
+}

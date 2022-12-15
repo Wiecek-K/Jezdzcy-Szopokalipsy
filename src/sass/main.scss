@@ -2,6 +2,9 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+@import './utils/variables.scss';
+
+@import './utils/reset';
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
