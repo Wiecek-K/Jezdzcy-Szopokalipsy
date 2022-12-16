@@ -1,0 +1,73 @@
+.customer-reviews {
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  &__box {
+    max-width: 280px;
+    height: 308px;
+    background-color: $third-background-color;
+    padding: 34px 65px 26px 57px;
+    position: relative;
+    &::before {
+      content: '';
+      background-image: url(../images/CustomerReviews/quotation.png);
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: 30px;
+      left: 58px;
+    }
+  }
+  &__underline-box {
+    width: 180px;
+    background-image: repeating-linear-gradient(
+      to top,
+      rgb(225, 225, 225),
+      rgb(225, 225, 225) 1px,
+      transparent 2px,
+      transparent 31px
+    );
+  }
+  &__text {
+    z-index: 99;
+    font-family: DM sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.55;
+    text-align: center;
+    position: relative;
+    // width: 157px;
+    padding: 0 16px 0 7px;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__dots {
+    width: 32px;
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+  &__reviewer-name {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    margin: 18px auto 0;
+  }
+  &__pagination {
+    width: 72px;
+    display: flex;
+    gap: 18px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+}

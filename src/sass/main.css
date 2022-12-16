@@ -61,4 +61,21 @@ body {
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+.customer-reviews__slide::before {
+  content: "";
+  background-color: aqua;
+  background-image: asset-url("./src/images/icons.svg#icon-quotation");
+  display: inline-block;
+  width: 54px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
