@@ -5,6 +5,7 @@
 @import './utils/variables.scss';
 
 @import './utils/reset';
-
+@import './components/container';
+@import './layouts/header-hero';
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';

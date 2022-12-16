@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  background-color: $first-label-color;
+  width: 100vw;
+  height: 502px;
+}
+.hero-title {
+  max-width: 218px;
+  margin-top: 0;
+  margin-bottom: 19px;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  position: relative;
+  z-index: 4;
+}
+.hero-title__highlighted {
+  color: $brand-color;
+  font-size: 43px;
+}
+// .help użyte tylko robocza, bo wykonaniu nawigacji do usunięcia
+.help {
+  margin-bottom: 137px;
+  height: 50px;
+}
+.hero-list {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+.hero-list__btn {
+  border: none;
+  border-radius: 20px;
+  height: 24px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-list__btn--dark {
+  background-color: $brand-color;
+  width: 62px;
+}
+.hero-list__btn--dark .hero-list__link {
+  color: $white;
+}
+.hero-list__btn--light {
+  background-color: $white;
+  width: 83px;
+}
+.hero-list__btn--light .hero-list__link {
+  color: $brand-color;
+}
+.hero-list__link {
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.header-img__icecream {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 1;
+}
+.header-img__elipse {
+  position: absolute;
+  right: 0;
+  top: 83px;
+  z-index: 0;
+}
