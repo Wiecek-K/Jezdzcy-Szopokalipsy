@@ -19,6 +19,9 @@
     @media screen and (min-width: $desktop) {
       gap: 15px;
     }
+    &--hidden {
+      display: none;
+    }
   }
 
   &__box {
