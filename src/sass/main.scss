@@ -4,7 +4,8 @@
  */
 @import './utils/variables.scss';
 
-@import './utils/reset';
-
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import './base/common';
+@import './base/reset';
+
+@import './layout/products';

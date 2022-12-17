@@ -1,14 +1,4 @@
-html {
-  font-size: 12px;
-  @media screen and (min-width: $tablet) {
-    font-size: 14px;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 16px;
-  }
-}
 body {
-  font-family: 'Titan One', cursive;
   font-weight: 400;
   letter-spacing: 0.04em;
 }
@@ -23,4 +13,19 @@ body {
     border: none;
     border-radius: 0.2%;
   }
+}
+
+p,
+h2,
+h3 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
