@@ -1,0 +1,309 @@
+.header {
+  position: relative;
+  background-color: $first-label-color;
+  width: 100vw;
+  height: 502px;
+}
+.hero-title {
+  max-width: 218px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  position: relative;
+  z-index: 4;
+  &__highlighted {
+    color: $brand-color;
+    font-size: 43px;
+    line-height: 0.955;
+  }
+}
+// .help użyte tylko robocza, bo wykonaniu nawigacji do usunięcia
+// .help {
+//   margin-bottom: 137px;
+//   height: 50px;
+//   font-size: 30px;
+// }
+.btn-wrapper {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+.hero-btn {
+  border: none;
+  border-radius: 20px;
+  height: 24px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-btn--dark {
+  background-color: $brand-color;
+  width: 62px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & .hero-btn__link {
+    color: $white;
+  }
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+.hero-btn--light {
+  background-color: $white;
+  width: 83px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  & .hero-btn__link {
+    color: $brand-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+.hero-btn__link {
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+.header-img__icecream {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 1;
+}
+.header-img__elipse {
+  position: absolute;
+  right: 0;
+  top: 83px;
+  z-index: 0;
+}
+.hero-milk {
+  display: none;
+}
+.wrapper-right {
+  display: none;
+}
+// TABLET--------------------------------------
+@media screen and (min-width: $tablet) {
+  .header {
+    height: 399px;
+    padding-top: 37px;
+    z-index: -2;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-title {
+    max-width: 162px;
+    // height: 80px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.145;
+    &__highlighted {
+      color: $brand-color;
+      font-size: 34px;
+      line-height: 0.905;
+    }
+  }
+  // .help użyte tylko robocza, bo wykonaniu nawigacji do usunięcia
+  // .help {
+  //   margin-bottom: 15px;
+  // }
+  .btn-wrapper {
+    margin-bottom: 66px;
+  }
+  .header-img__elipse {
+    position: absolute;
+    right: 137px;
+    top: 31px;
+    z-index: -1;
+  }
+  .header-img__icecream {
+    position: absolute;
+    right: 247px;
+    top: 63px;
+  }
+  .hero-milk {
+    display: flex;
+  }
+  .hero-milk__descritpion {
+    margin-top: 0;
+    margin-bottom: 7px;
+    color: $white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    max-width: 114px;
+    // height: 48px;
+  }
+  .hero-icon {
+    background-color: white;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    fill: $brand-color;
+  }
+  .hero-milk__img-wrapper {
+    width: 124px;
+  }
+  .header-img__milk {
+    position: absolute;
+    bottom: 20px;
+  }
+  .wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .hero-stats {
+    margin-top: 0;
+    margin-right: 9px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    &__num {
+      position: relative;
+      font-size: 28px;
+      color: $brand-color;
+      margin: 0;
+      text-align: right;
+      &::after {
+        content: url(../images/hero-ellipse.svg);
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        top: -13px;
+        right: -9px;
+        z-index: -1;
+      }
+    }
+    &__description {
+      color: $white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8px;
+      line-height: 1.144;
+      letter-spacing: 0;
+      margin: 0;
+      text-align: right;
+    }
+  }
+  .header-img__woman {
+    height: 133px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+// DESKTOP----------------------
+@media screen and (min-width: $desktop) {
+  .header {
+    height: 665px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  .hero-title {
+    max-width: 277px;
+    // height: 80px;
+    font-size: 38px;
+    font-weight: 400;
+    &__highlighted {
+      color: $brand-color;
+      font-size: 58px;
+    }
+  }
+  // .help użyte tylko robocza, bo wykonaniu nawigacji do usunięcia
+  // .help {
+  //   margin-bottom: 84px;
+  // }
+  .btn-wrapper {
+    margin-bottom: 112px;
+  }
+  .hero-btn {
+    height: 40px;
+  }
+  .hero-btn--dark {
+    background-color: $brand-color;
+    width: 104px;
+  }
+  .hero-btn--light {
+    background-color: $white;
+    width: 138px;
+  }
+  .hero-btn__link {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .header-img__elipse {
+    right: 267px;
+    top: 52px;
+  }
+  .header-img__icecream {
+    position: absolute;
+    right: 450px;
+    top: 108px;
+  }
+  .hero-milk__descritpion {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 200px;
+  }
+  .hero-icon {
+    width: 26px;
+    height: 26px;
+  }
+  .hero-milk__img-wrapper {
+    width: 188px;
+  }
+  .header-img__milk {
+    bottom: 40px;
+    left: 77px;
+  }
+  .hero-stats {
+    gap: 15px;
+    margin-right: 0;
+    &__num {
+      font-size: 46px;
+      color: $brand-color;
+      &::after {
+        content: url(../images/hero-ellipse.svg);
+        height: 30px;
+        width: 30px;
+        top: -19px;
+        right: -15px;
+      }
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+  }
+  .header-img__woman {
+    height: 232px;
+    position: absolute;
+    bottom: 0;
+    right: 109px;
+  }
+}

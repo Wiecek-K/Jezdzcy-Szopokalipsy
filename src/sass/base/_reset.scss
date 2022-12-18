@@ -1,6 +1,17 @@
+html {
+  font-size: 12px;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+
 body {
   font-weight: 400;
   letter-spacing: 0.04em;
+  font-family: 'Titan One', sans-serif;
 }
 
 *:focus {
