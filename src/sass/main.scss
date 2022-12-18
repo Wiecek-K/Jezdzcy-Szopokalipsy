@@ -4,7 +4,10 @@
  */
 @import './utils/variables.scss';
 
-@import './utils/reset';
+// Style dla pliku z przykładem HTML fragmentu
+@import './base/reset';
+
 @import './components/container';
 @import './layouts/header-hero';
+@import './layouts/products';
 // Style dla pliku z przykładem HTML fragmentu
