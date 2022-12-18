@@ -1,44 +1,43 @@
 .customer-reviews {
-  & .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    @media screen and (min-width: $tablet) {
-      gap: 35px;
-    }
-  }
+  $line-height-mobile: 2.55em;
+  $line-height-tablet: 2.16em;
+  $line-height-desktop: 1.86em;
+  font-family: DM sans;
+  font-weight: 500;
   &__slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    @media screen and (min-width: $tablet) {
-      gap: 20px;
-    }
-    @media screen and (min-width: $desktop) {
-      gap: 15px;
-    }
     &--hidden {
       display: none;
     }
   }
-
-  &__box {
-    width: 280px;
-    height: 308px;
-    background-color: $third-background-color;
-    padding: 43px 65px 26px 57px;
-    position: relative;
+  &__img {
+    display: block;
+    width: 85px;
+    margin-bottom: 29px;
     @media screen and (min-width: $tablet) {
-      width: 620px;
-      height: 164px;
-      padding: 30px 36px 28px 60px;
+      margin-bottom: 19px;
     }
     @media screen and (min-width: $desktop) {
-      width: 928px;
-      height: 138px;
-      padding: 47px 89px 39px 87px;
+      margin-bottom: 15px;
+    }
+  }
+  &__box {
+    background-color: $third-background-color;
+    padding: 43px 50px 20px 50px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      padding: 47px 36px 28px 60px;
+      width: 85%;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 47px 54px 32px 59px;
+      width: 75%;
+      margin-bottom: 15px;
     }
     &::before {
       content: '';
@@ -47,95 +46,76 @@
       width: 54px;
       height: 40px;
       position: absolute;
-      top: 27px;
-      left: 64px;
+      top: 28px;
+      left: 61px;
       @media screen and (min-width: $tablet) {
-        top: 15px;
+        top: 30px;
         left: 40px;
       }
       @media screen and (min-width: $desktop) {
-        top: 33px;
-        left: 78px;
+        top: 32px;
+        left: 50px;
       }
     }
   }
-
   &__underline-box {
-    width: 180px;
-    margin-inline: auto;
-    background-image: repeating-linear-gradient(
-      to top,
-      rgb(225, 225, 225),
-      rgb(225, 225, 225) 1px,
-      transparent 2px,
-      transparent 31px
-    );
+    background-image: linear-gradient(to top, rgba(225, 225, 225, 1) 1px, transparent 1px);
+    background-size: auto $line-height-mobile;
+    background-origin: content-box;
     @media screen and (min-width: $tablet) {
-      width: 524px;
-      background-image: repeating-linear-gradient(
-        to top,
-        rgb(225, 225, 225) 1px,
-        transparent 2px,
-        transparent 31px
-      );
+      background-size: auto $line-height-tablet;
     }
     @media screen and (min-width: $desktop) {
-      width: 813px;
+      background-size: auto $line-height-desktop;
     }
   }
   &__text {
+    margin: 0;
+    padding: 0;
     z-index: 99;
-    font-family: DM sans;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 2.55;
+    line-height: $line-height-mobile;
     text-align: center;
     position: relative;
-    // width: 157px;
-    padding: 0 16px 0 7px;
-    margin: 0 auto;
+    margin-inline: 7px 16px;
     @media screen and (min-width: $tablet) {
-      font-size: 14px;
-      letter-spacing: 0.04em;
-      line-height: 2.16;
-      padding: 0 44px 0 20px;
+      line-height: $line-height-tablet;
+      margin-inline: 20px 44px;
     }
     @media screen and (min-width: $desktop) {
-      font-size: 16px;
-      letter-spacing: 0.04em;
-      line-height: 1.86;
-      padding: 0 35px 0 28px;
+      line-height: $line-height-desktop;
+      margin-inline: 28px 35px;
     }
   }
   &__dots {
-    width: 32px;
-    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
     gap: 10px;
-    justify-self: center;
-    margin-inline: auto;
+    margin-bottom: 18px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
   }
   &__reviewer-name {
-    font-family: DM Sans;
-    font-weight: 500;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 1.86;
-    margin: 18px auto 0;
+    margin-bottom: 30px;
     @media screen and (min-width: $tablet) {
       font-size: 16px;
-      line-height: 1.86;
-      margin: 14px auto 0;
+      margin-bottom: 35px;
     }
     @media screen and (min-width: $desktop) {
       font-size: 20px;
-      line-height: 1.86;
-      margin: 15px auto 0;
     }
   }
   &__pagination {
-    width: 72px;
     display: flex;
     gap: 18px;
-    justify-self: center;
-    margin-inline: auto;
   }
 }
