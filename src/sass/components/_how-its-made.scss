@@ -16,15 +16,14 @@
   padding-top: 125px;
   padding-bottom: 15px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     font-size: 26px;
     line-height: 30px;
 
     padding-top: 130px;
     padding-bottom: 16px;
   }
-
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     font-size: 30px;
     line-height: 34px;
 
@@ -47,15 +46,14 @@
   margin: 0;
   padding-bottom: 26px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     font-size: 48px;
     line-height: 55px;
 
     margin-bottom: 50px;
     padding-bottom: 0px;
   }
-
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     font-size: 58px;
     line-height: 66px;
 
@@ -72,13 +70,12 @@
 
   padding-bottom: 46px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     // padding-top: 50px;
     margin-right: 0px;
     height: 339px;
   }
-
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     // padding-top: 55px;
     margin-right: 0px;
     height: 516px;
@@ -90,14 +87,14 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     columns: 2;
     gap: 17px;
     display: flex;
     flex-direction: row;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     display: flex;
     flex-direction: row;
     columns: 2;
@@ -127,10 +124,10 @@
     background-image: url('../images/About/about-background-mobile2x.png');
   }
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     background-image: none;
   }
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     background-image: none;
   }
 }
@@ -148,12 +145,12 @@
   margin-right: auto;
   //   width: 68.75%;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     font-size: 14px;
     line-height: 176%;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     font-size: 16px;
     line-height: 176%;
   }
@@ -165,13 +162,12 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     padding-bottom: 35px;
     padding-top: 50px;
     margin-left: 0px;
   }
-
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     padding-bottom: 35px;
     padding-top: 51px;
     margin-left: 0px;
@@ -193,14 +189,14 @@
   //   padding-left: 50px;
   //   padding-right: 50px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     font-size: 14px;
     line-height: 176%;
 
     margin-left: 0px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     font-size: 14px;
     line-height: 194%;
   }
@@ -216,11 +212,11 @@
 
   padding-bottom: 17px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     padding-bottom: 62px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     padding-bottom: 45px;
   }
 }
@@ -242,12 +238,11 @@
   &:focus {
     background-color: #ecebeb;
   }
-
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     // padding-left: 20px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     margin-inline-start: 0%;
   }
 }
@@ -265,12 +260,12 @@
 
   padding-left: 37px;
 
-  @media (min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     font-size: 16px;
     line-height: 21px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and(min-width: $desktop) {
     font-size: 16px;
     line-height: 21px;
   }
