@@ -7,4 +7,7 @@
 @import './components/container';
 @import './utils/variables.scss';
 @import './utils/reset';
-@import './utils/visually-hidden'; // Style dla pliku z przykładem HTML fragmentu
+@import './utils/visually-hidden'; 
+
+@import './layouts/header-hero';
+
