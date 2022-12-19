@@ -1,0 +1,36 @@
+.gallery {
+  background: linear-gradient(180deg, #fff5f6, #fff5f6 39.5%, #fff 39.5%, #fff 100%);
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+.gallery__container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 34px;
+    padding-right: 34px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 115px;
+    padding-right: 115px;
+    width: 100%;
+  }
+}
