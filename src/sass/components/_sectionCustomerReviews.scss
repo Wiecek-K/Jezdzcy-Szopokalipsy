@@ -1,0 +1,136 @@
+.customer-reviews {
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media screen and (min-width: $tablet) {
+      gap: 35px;
+    }
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media screen and (min-width: $tablet) {
+      gap: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 15px;
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__box {
+    width: 280px;
+    background-color: $third-background-color;
+    padding: 43px 65px 26px 57px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+      width: 620px;
+      padding: 30px 36px 28px 60px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 928px;
+      padding: 47px 89px 39px 87px;
+    }
+    &::before {
+      content: '';
+      background-image: url(../images/CustomerReviews/quotation.png);
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      @media screen and (min-width: $tablet) {
+        top: 30px;
+        left: 40px;
+      }
+      @media screen and (min-width: $desktop) {
+        top: 32px;
+        left: 50px;
+      }
+    }
+  }
+
+  &__underline-box {
+    width: 180px;
+    margin-inline: auto;
+    background-image: repeating-linear-gradient(
+      to top,
+      rgb(225, 225, 225),
+      rgb(225, 225, 225) 1px,
+      transparent 2px,
+      transparent 31px
+    );
+    @media screen and (min-width: $tablet) {
+      width: 524px;
+      background-image: repeating-linear-gradient(
+        to top,
+        rgb(225, 225, 225) 1px,
+        transparent 2px,
+        transparent 31px
+      );
+    }
+    @media screen and (min-width: $desktop) {
+      width: 813px;
+    }
+  }
+  &__text {
+    z-index: 99;
+    font-family: DM sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.55;
+    text-align: center;
+    position: relative;
+    // width: 157px;
+    padding: 0 16px 0 7px;
+    margin: 0 auto;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      line-height: 2.16;
+      padding: 0 44px 0 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      line-height: 1.86;
+      padding: 0 35px 0 28px;
+    }
+  }
+  &__dots {
+    width: 32px;
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+  &__reviewer-name {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    margin: 18px auto 0;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      margin: 14px auto 0;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      margin: 15px auto 0;
+    }
+  }
+  &__pagination {
+    width: 72px;
+    display: flex;
+    gap: 18px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+}
