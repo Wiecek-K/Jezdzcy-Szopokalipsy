@@ -2,10 +2,9 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-
-@import './base/reset';
-@import './components/container';
 @import './utils/variables.scss';
+@import './components/container';
+
 @import './utils/reset';
 @import './utils/visually-hidden';
 
@@ -13,6 +12,6 @@
 
 @import './components/how-its-made';
 @import './layouts/products';
-@import './components/sectionCustomerReviews';@import './layouts/advantages';
+@import './components/sectionCustomerReviews';
+@import './layouts/advantages';
 @import './layouts/galery';
-
