@@ -26,18 +26,15 @@
 
   &__box {
     width: 280px;
-    height: 308px;
     background-color: $third-background-color;
     padding: 43px 65px 26px 57px;
     position: relative;
     @media screen and (min-width: $tablet) {
       width: 620px;
-      height: 164px;
       padding: 30px 36px 28px 60px;
     }
     @media screen and (min-width: $desktop) {
       width: 928px;
-      height: 138px;
       padding: 47px 89px 39px 87px;
     }
     &::before {
@@ -47,15 +44,15 @@
       width: 54px;
       height: 40px;
       position: absolute;
-      top: 27px;
-      left: 64px;
+      top: 28px;
+      left: 61px;
       @media screen and (min-width: $tablet) {
-        top: 15px;
+        top: 30px;
         left: 40px;
       }
       @media screen and (min-width: $desktop) {
-        top: 33px;
-        left: 78px;
+        top: 32px;
+        left: 50px;
       }
     }
   }
@@ -122,12 +119,10 @@
     margin: 18px auto 0;
     @media screen and (min-width: $tablet) {
       font-size: 16px;
-      line-height: 1.86;
       margin: 14px auto 0;
     }
     @media screen and (min-width: $desktop) {
       font-size: 20px;
-      line-height: 1.86;
       margin: 15px auto 0;
     }
   }
