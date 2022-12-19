@@ -2,10 +2,11 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-
-@import './base/reset';
+@import './utils/variables';
 @import './components/container';
-@import './utils/variables.scss';
+
+@import './utils/reset';
+
 @import './utils/visually-hidden';
 
 @import './layouts/header-hero';
