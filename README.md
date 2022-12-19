@@ -1,4 +1,4 @@
-TEST KW2.7
+TEST KW2.8
 
 # parcel-project-template
 
