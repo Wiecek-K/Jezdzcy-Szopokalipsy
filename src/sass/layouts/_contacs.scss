@@ -3,7 +3,7 @@
   font-size: 12px;
   background-color: #fff5f6;
   position: absolute;
-
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding-top: 121px;
@@ -19,9 +19,10 @@
     padding-bottom: 119px;
   }
 }
-h5 {
+.contacts__text {
   font-family: 'DM Sans';
   font-size: 12px;
+  line-height: 186%;
 }
 
 .contacts__list {
@@ -44,7 +45,7 @@ h5 {
   }
 }
 
-ul {
+.contacts ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
