@@ -130,9 +130,6 @@
   }
 }
 
-hr {
-  background-color: #e1e1e1;
-}
 .contacts__list--e-mail {
   text-decoration: none;
   width: 161px;
@@ -141,6 +138,7 @@ hr {
   font-size: 12px;
   line-height: 0.18;
   letter-spacing: 0.03em;
+  line-height: 186%;
 }
 
 a {
@@ -150,15 +148,6 @@ a {
 .contact__accent-colour {
   color: #ffa5ba;
 }
-
-// .underline {
-//     background-image: repeating-linear-gradient(
-//       to top,
-//       rgb(225, 225, 225),
-//       rgb(225, 225, 225) 1px,
-//       transparent 2px,
-//       transparent 31px);
-// }
 
 hr {
   height: 1px;
