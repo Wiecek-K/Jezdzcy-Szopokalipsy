@@ -3,13 +3,7 @@
   padding-bottom: 60px;
   background: #fff5f6;
 }
-.advantages__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1200px;
-}
+
 @media screen and (min-width: 1200px) {
   .advantages__text {
     width: 300px;
@@ -30,38 +24,13 @@
     width: 300px;
   }
 }
-@media screen and (min-width: 480px) {
-  .advantages__container {
-    width: 480px;
-  }
-}
+
 @media screen and (min-width: 480px) {
   .advantages__list {
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
-  .advantages__list {
-    margin-left: -100px;
-    gap: 100px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .advantages__container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__container {
-    margin-left: 200px;
-  }
-}
 
-@media screen and (min-width: 1280px) {
-  .advantages__container {
-    width: 1280px;
-  }
-}
 .advantages__title {
   position: absolute;
   text-align: center;
@@ -113,6 +82,7 @@
     background-image: url(../images/advantages/advantages-heart-desktop.png);
   }
 }
+
 .advantages__text {
   font-weight: 700;
   font-size: 16px;
@@ -130,6 +100,7 @@
   text-transform: uppercase;
   color: #d41443;
 }
+
 @media screen and(min-width:768px) {
   .advantages {
     padding-bottom: 64px;
@@ -137,6 +108,13 @@
 
   .advantages__list {
     display: flex;
+    justify-content: center;
+    gap: 85px;
+  }
+  @media screen and (max-width: 1200px) {
+    .advantages__list {
+      gap: 140px;
+    }
   }
 
   .advantages__item {
@@ -168,12 +146,19 @@
   }
 }
 
+@media screen and(max-width:768px) {
+  .advantages__list {
+    margin-left: -40px;
+    gap: 50px;
+  }
+}
 @media screen and(min-width:1280px) {
   .advantages {
     padding-top: 40px;
     padding-bottom: 120px;
   }
   .advantages__list {
+    justify-content: center;
     display: flex;
   }
   .advantages__item {
@@ -207,5 +192,34 @@
     font-weight: 400;
     font-size: 58px;
     line-height: 66px;
+  }
+}
+
+.advantages__container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 34px;
+    padding-right: 34px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 115px;
+    padding-right: 115px;
+    width: 100%;
   }
 }

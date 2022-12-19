@@ -2,12 +2,12 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-@import './components/galery';
-@import './components/advantages';
+
 @import './components/container';
 @import './utils/variables.scss';
 @import './utils/reset';
-@import './utils/visually-hidden'; 
+@import './utils/visually-hidden';
 
 @import './layouts/header-hero';
-
+@import './layouts/advantages';
+@import './layouts/galery';
