@@ -56,6 +56,10 @@
   &:focus {
     background-color: #d41443;
     color: #ffffff;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .mobile-menu--flex-button {
@@ -80,6 +84,10 @@
     &:hover,
     &:focus {
       color: #d41443;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
