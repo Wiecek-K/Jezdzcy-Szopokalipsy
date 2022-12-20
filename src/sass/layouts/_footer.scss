@@ -46,7 +46,7 @@
           cursor: pointer;
           transition-property: background-color;
           transition-duration: 250ms;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+          transition-timing-function: $cubic-bezier; 
           width: 32px;
           height: 32px;
           border-radius: 50%;
