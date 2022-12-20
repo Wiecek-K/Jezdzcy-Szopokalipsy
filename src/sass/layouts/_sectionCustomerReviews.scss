@@ -1,0 +1,144 @@
+.customer-reviews {
+  $line-height-mobile: 2.55em;
+  $line-height-tablet: 2.16em;
+  $line-height-desktop: 1.86em;
+  font-family: DM sans;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 43px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 61px;
+    margin-bottom: 66px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 85px;
+    margin-bottom: 29px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 19px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__box {
+    width: 280px;
+    background-color: $third-background-color;
+    padding: 43px 50px 20px 50px;
+    position: relative;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+    
+      width: 620px;
+      padding: 47px 36px 28px 60px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      
+      width: 926px;
+      padding: 47px 59px 32px 54px;
+      margin-bottom: 15px;
+    }
+    &::before {
+      content: '';
+      background-image: url(../images/CustomerReviews/quotation.png);
+      display: inline-block;
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      @media screen and (min-width: $tablet) {
+        top: 30px;
+        left: 40px;
+      }
+      @media screen and (min-width: $desktop) {
+        top: 32px;
+        left: 50px;
+      }
+    }
+  }
+
+  &__underline-box {
+    background-image: linear-gradient(to top, rgba(225, 225, 225, 1) 1px, transparent 1px);
+    background-size: auto $line-height-mobile;
+    background-origin: content-box;
+    @media screen and (min-width: $tablet) {
+      background-size: auto $line-height-tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      background-size: auto $line-height-desktop;
+    }
+  }
+  &__text {
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+    line-height: $line-height-mobile;
+    text-align: center;
+    position: relative;
+    margin-inline: 7px 16px;
+    letter-spacing: normal;
+
+    @media screen and (min-width: $tablet) {
+      letter-spacing: 0.04em;
+      line-height: $line-height-tablet;
+      margin-inline: 20px 44px;
+    }
+    @media screen and (min-width: $desktop) {
+      letter-spacing: 0.04em;
+      line-height: $line-height-desktop;
+      margin-inline: 28px 35px;
+    }
+  }
+  &__dots {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
+  }
+  &__reviewer-name {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: $line-height-desktop;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
+  }
+  &__pagination {
+    width: 72px;
+    display: flex;
+    gap: 18px;
+    justify-self: center;
+    margin-inline: auto;
+  }
+}
