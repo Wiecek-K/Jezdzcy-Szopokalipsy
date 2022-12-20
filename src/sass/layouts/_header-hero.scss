@@ -3,6 +3,15 @@
   background-color: $first-label-color;
   width: 100vw;
   height: 502px;
+  // max-width: $mobile;
+  // margin: auto;
+  // height: 100%;
+}
+.hero {
+  position: relative;
+  // max-width: $mobile;
+  margin: auto;
+  height: 100%;
 }
 .hero-title {
   max-width: 218px;
@@ -81,14 +90,14 @@
 .header-img__icecream {
   position: absolute;
   top: 92px;
-  right: 32px;
-  z-index: 1;
+  right: 12px;
+  z-index: 2;
 }
 .header-img__elipse {
   position: absolute;
-  right: 0;
+  right: -20px;
   top: 83px;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-milk {
   display: none;
@@ -101,9 +110,15 @@
   .header {
     height: 399px;
     padding-top: 37px;
-    z-index: -2;
+    // z-index: -2;
   }
   .hero {
+    // display: flex;
+    // justify-content: space-between;
+    max-width: $tablet;
+    // height: 100%;
+  }
+  .header-wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -132,14 +147,14 @@
   }
   .header-img__elipse {
     position: absolute;
-    right: 137px;
-    top: 31px;
-    z-index: -1;
+    right: 101px;
+    top: -6px;
+    // z-index: -1;
   }
   .header-img__icecream {
     position: absolute;
-    right: 247px;
-    top: 63px;
+    right: 211px;
+    top: 26px;
   }
   .hero-milk {
     display: flex;
@@ -212,6 +227,7 @@
     height: 133px;
     position: absolute;
     bottom: 0;
+    z-index: 2;
   }
 }
 // DESKTOP----------------------
@@ -220,6 +236,10 @@
     height: 665px;
     padding-left: 115px;
     padding-right: 115px;
+  }
+  .hero {
+    max-width: $desktop;
+    // height: 100%;
   }
   .hero-title {
     max-width: 277px;
@@ -256,13 +276,13 @@
     line-height: 1.3;
   }
   .header-img__elipse {
-    right: 267px;
-    top: 52px;
+    right: 152px;
+    top: 15px;
   }
   .header-img__icecream {
     position: absolute;
-    right: 450px;
-    top: 108px;
+    right: 335px;
+    top: 71px;
   }
   .hero-milk__descritpion {
     margin-bottom: 20px;
@@ -279,7 +299,7 @@
   }
   .header-img__milk {
     bottom: 40px;
-    left: 77px;
+    left: -38px;
   }
   .hero-stats {
     gap: 15px;
@@ -304,6 +324,6 @@
     height: 232px;
     position: absolute;
     bottom: 0;
-    right: 109px;
+    right: -6px;
   }
 }
