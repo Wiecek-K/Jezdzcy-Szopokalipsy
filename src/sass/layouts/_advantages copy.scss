@@ -65,21 +65,21 @@
   &::before {
     content: '';
     width: 33px;
-    background-image: url(../images/Advantages/milkbucket.png);
+    background-image: url(../images/applekbucket.png);
   }
 }
 .advantages__2-item {
   &::before {
     content: '';
     width: 50px;
-    background-image: url(../images/Advantages/applekbucket.png);
+    background-image: url(../images/hero-ellipse.svg);
   }
 }
 .advantages__3-item {
   &::before {
     content: '';
     width: 50px;
-    background-image: url(../images/Advantages/heart.png);
+    background-image: url(../images/hero-ellipse.svg);
   }
 }
 
