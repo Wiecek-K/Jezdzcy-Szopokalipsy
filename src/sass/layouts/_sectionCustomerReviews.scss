@@ -20,9 +20,9 @@
     flex-direction: column;
     align-items: center;
 
-    // &--hidden {
-    //   // display: none;
-    // }
+    &--hidden {
+      display: none;
+    }
   }
 
   &__img {
@@ -38,19 +38,21 @@
   }
 
   &__box {
-    width: 100%;
+    width: 280px;
     background-color: $third-background-color;
     padding: 43px 50px 20px 50px;
     position: relative;
     margin-bottom: 30px;
     @media screen and (min-width: $tablet) {
-      width: 85%;
+    
+      width: 620px;
       padding: 47px 36px 28px 60px;
       margin-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
-      width: 75%;
-      padding: 47px 89px 39px 87px;
+      
+      width: 926px;
+      padding: 47px 59px 32px 54px;
       margin-bottom: 15px;
     }
     &::before {
@@ -106,7 +108,7 @@
     }
   }
   &__dots {
-    margin:0;
+    margin: 0;
     padding: 0;
     display: flex;
     gap: 10px;
