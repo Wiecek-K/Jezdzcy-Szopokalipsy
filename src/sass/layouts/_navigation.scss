@@ -1,0 +1,129 @@
+.nav {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.logo {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+
+.navigation__img {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
+
+.navigation__list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+
+  & a {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+}
+.navigation--flex-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation__button {
+  width: 159px;
+  height: 44px;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    color: #ffffff;
+  }
+}
+
+.mobile-menu--open {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+}
+
+////////////////////////////////////////MEDIA REQUEST//////////////////////////////////////////////////////
+
+@media screen and(max-width: 767px) {
+  .nav {
+    padding-top: 6px;
+    padding-bottom: 137px;
+  }
+  .navigation__list {
+    display: none;
+  }
+  .navigation__button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding-bottom: 19px;
+  }
+  .navigation__list {
+    display: none;
+  }
+  .mobile-menu--open {
+    top: 52px;
+    right: 224px;
+  }
+  .navigation--flex-button {
+    position: absolute;
+    top: 38px;
+    right: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    padding-bottom: 84px;
+  }
+  .mobile-menu--open {
+    display: none;
+  }
+  .navigation__list {
+    display: flex;
+  }
+  .navigation--flex-button {
+    position: static;
+    display: flex;
+  }
+}
