@@ -4,15 +4,20 @@
  */
 @import './utils/variables';
 @import './components/container';
-
 @import './utils/reset';
-
 @import './utils/visually-hidden';
 
+@import './layouts/navigation';
+@import './layouts/mobile-menu';
 @import './layouts/header-hero';
+@import './components/how-its-made';
+@import './layouts/products';
+@import './layouts/advantages';
+@import './layouts/galery';
 
 @import './components/how-its-made';
 @import './layouts/products';
 @import './layouts/sectionCustomerReviews';
-@import './layouts/advantages';
-@import './layouts/galery';
+@import './layouts/footer';
+
+

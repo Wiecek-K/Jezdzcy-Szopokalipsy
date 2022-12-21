@@ -23,6 +23,7 @@
     padding-top: 130px;
     padding-bottom: 16px;
   }
+
   @media screen and(min-width: $desktop) {
     font-size: 30px;
     line-height: 34px;
@@ -53,6 +54,7 @@
     margin-bottom: 50px;
     padding-bottom: 0px;
   }
+
   @media screen and(min-width: $desktop) {
     font-size: 58px;
     line-height: 66px;
@@ -66,17 +68,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  //   width: 87.5%;
 
   padding-bottom: 46px;
 
   @media screen and (min-width: $tablet) {
-    // padding-top: 50px;
     margin-right: 0px;
     height: 339px;
   }
+
   @media screen and(min-width: $desktop) {
-    // padding-top: 55px;
     margin-right: 0px;
     height: 516px;
   }
@@ -127,6 +127,7 @@
   @media screen and(min-width: $tablet) {
     background-image: none;
   }
+
   @media screen and(min-width: $desktop) {
     background-image: none;
   }
@@ -143,7 +144,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  //   width: 68.75%;
 
   @media screen and(min-width: $tablet) {
     font-size: 14px;
@@ -158,6 +158,8 @@
 
 .how-its-made__text1--padding-margin {
   padding-bottom: 47px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -165,11 +167,18 @@
   @media screen and(min-width: $tablet) {
     padding-bottom: 35px;
     padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+
     margin-left: 0px;
   }
+
   @media screen and(min-width: $desktop) {
     padding-bottom: 35px;
     padding-top: 51px;
+    padding-left: 0px;
+    padding-right: 0px;
+
     margin-left: 0px;
   }
 }
@@ -185,9 +194,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  //   padding-left: 50px;
-  //   padding-right: 50px;
 
   @media screen and(min-width: $tablet) {
     font-size: 14px;
@@ -205,19 +211,39 @@
 .how-its-made__text2--padding-margin {
   margin-top: 0;
   margin-bottom: 0;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media screen and(min-width: $tablet) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .how-its-made__text2--padding {
   margin-bottom: 0;
 
-  padding-bottom: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 26px;
 
   @media screen and(min-width: $tablet) {
     padding-bottom: 62px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   @media screen and(min-width: $desktop) {
     padding-bottom: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -229,8 +255,8 @@
   border: none;
 
   display: block;
-  //   padding-left: 20px;
-  //   margin-right: auto;
+
+  margin-inline-start: 50px;
 
   cursor: pointer;
 
@@ -238,12 +264,13 @@
   &:focus {
     background-color: #ecebeb;
   }
+
   @media screen and(min-width: $tablet) {
-    // padding-left: 20px;
+    margin-inline-start: 0px;
   }
 
   @media screen and(min-width: $desktop) {
-    margin-inline-start: 0%;
+    margin-inline-start: 0px;
   }
 }
 
@@ -257,8 +284,7 @@
   align-items: center;
   text-align: center;
   color: #d41443;
-
-  padding-left: 37px;
+  display: inline;
 
   @media screen and(min-width: $tablet) {
     font-size: 16px;
@@ -272,7 +298,7 @@
 }
 
 .how-its-made__button-arrow {
-  width: 7.5px;
+  width: 6.5px;
   height: 10px;
   color: #d41443;
   margin-left: 14px;
