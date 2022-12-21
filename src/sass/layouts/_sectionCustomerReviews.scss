@@ -19,10 +19,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &--hidden {
-      display: none;
-    }
   }
 
   &__img {
@@ -44,13 +40,11 @@
     position: relative;
     margin-bottom: 30px;
     @media screen and (min-width: $tablet) {
-    
       width: 620px;
       padding: 47px 36px 28px 60px;
       margin-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
-      
       width: 926px;
       padding: 47px 59px 32px 54px;
       margin-bottom: 15px;
