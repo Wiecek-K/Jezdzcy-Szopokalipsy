@@ -1,11 +1,16 @@
 const menuOverlay = document.querySelector('.mobile-menu');
-const closeMenuButton = document.querySelector('.mobile-menu--toggle');
+const closeMenuBtn = document.querySelector('.mobile-menu--toggle');
 const openMenuBtn = document.querySelector('.mobile-menu--open');
+const navLinks = document.querySelectorAll('.nav-link');
 
 openMenuBtn.addEventListener('click', e => {
   menuOverlay.classList.remove('d-none');
 });
 
-closeMenuButton.addEventListener('click', e => {
+closeMenuBtn.addEventListener('click', e => {
+  menuOverlay.classList.add('d-none');
+});
+
+navLinks.addEventListener('click', e => {
   menuOverlay.classList.add('d-none');
 });
