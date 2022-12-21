@@ -5,7 +5,7 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -21,6 +21,11 @@
   padding-right: 28px;
   padding-top: 23px;
   z-index: 9999;
+
+  &:hover,
+  :focus {
+    fill: black;
+  }
 }
 
 .mobile-menu--toggle {
@@ -33,11 +38,6 @@
   width: 14px;
   height: 14px;
   fill: #ffffff;
-
-  &:hover,
-  &:focus {
-    fill: #d41443;
-  }
 }
 
 .mobile-menu__button {
@@ -56,8 +56,9 @@
   &:focus {
     background-color: #d41443;
     color: #ffffff;
+    transform: scale(1.15);
 
-    transition-property: background-color, color;
+    transition-property: background-color, color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -100,7 +101,7 @@
 @media screen and(max-width: 767px) {
   .mobile-menu {
     width: 250px;
-    height: 55vh;
+    height: 100vh;
   }
   .mobile-menu__button {
     width: 209px;
