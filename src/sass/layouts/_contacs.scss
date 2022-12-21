@@ -3,7 +3,7 @@
   font-size: 12px;
   background-color: #fff5f6;
   position: absolute;
-  width: 100vw;
+  // width: 100vw;
   display: flex;
   justify-content: center;
   padding-top: 121px;
@@ -25,6 +25,8 @@
   line-height: 186%;
 }
 
+// Contacts list
+
 .contacts__list {
   position: relative;
   top: -190px;
@@ -45,18 +47,11 @@
   }
 }
 
-.contacts ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.contact__tittle-backgroud {
+.contacts__tittle-backgroud {
   display: inline-block;
   text-align: center;
 }
-.contact__tittle {
+.contacts__tittle {
   background-color: #f0d1a5;
   letter-spacing: 0.04em;
   width: 80px;
@@ -67,7 +62,7 @@
   color: #fff;
   border-radius: 4px;
 }
-.contact__tittle-green {
+.contacts__tittle-green {
   background-color: #c2e297;
   letter-spacing: 0.04em;
   width: 130px;
@@ -78,13 +73,13 @@
   color: #fff;
   border-radius: 4px;
 }
-.contact__info {
+.contacts__info {
   color: #907e82;
   line-height: 18px;
   text-shadow: 0px 2px 6px #907e82;
 }
 
-.contact__box {
+.contacts__list-item {
   position: relative;
   padding: 44px 20px;
   background-color: #fff;
@@ -117,7 +112,7 @@
   @media screen and (min-width: $tablet) {
     width: 220px;
     padding-bottom: 40px;
-    padding-top: 152px;
+    padding-top: 62px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -130,6 +125,36 @@
   }
 }
 
+.contacts__list-item::before {
+  content: '';
+  position: absolute;
+  background-size: contain;
+  left: 15px;
+  right: 15px;
+  top: -113px;
+  display: block;
+  width: 249px;
+  height: 252px;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 220px;
+    height: 226px;
+    top: -102px;
+    left: 2px;
+    right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 335px;
+    height: 335px;
+    top: -210px;
+    left: 19px;
+    right: 19px;
+  }
+}
+
 .contacts__list--e-mail {
   text-decoration: none;
   width: 161px;
@@ -139,13 +164,10 @@
   line-height: 0.18;
   letter-spacing: 0.03em;
   line-height: 186%;
-}
-
-a {
   color: #907e82;
 }
 
-.contact__accent-colour {
+.contacts__accent-colour {
   color: #ffa5ba;
 }
 
