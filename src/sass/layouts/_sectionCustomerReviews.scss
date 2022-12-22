@@ -4,15 +4,15 @@
   $line-height-desktop: 1.86em;
   font-family: DM sans;
   font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 43px;
+  margin-top: 80px;
+  margin-bottom: 86px;
   @media screen and (min-width: $tablet) {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 61px;
-    margin-bottom: 66px;
+    margin-top: 122px;
+    margin-bottom: 132px;
   }
 
   &__slide {
