@@ -6,16 +6,16 @@
   display: flex;
   justify-content: center;
   padding-top: 121px;
-  padding-bottom: 98px;
+  // padding-bottom: 98px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 122px;
-    padding-bottom: 112px;
+    // padding-bottom: 112px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 127px;
-    padding-bottom: 119px;
+    // padding-bottom: 119px;
   }
 }
 .contacts__text {

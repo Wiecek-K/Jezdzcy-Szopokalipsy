@@ -2,7 +2,7 @@
   background-color: $second-background-color;
 
   &__container {
-    padding: 113px 20px 0px 20px;
+    padding: 0 20px 0px 20px;
     display: flex;
     flex-direction: column;
 
@@ -99,7 +99,7 @@
 @media (min-width: 768px) {
   .footer {
     &__container {
-      padding: 158px 36px 91px 36px;
+      padding: 0 36px 91px 36px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -147,7 +147,7 @@
 @media (min-width: 1280px) {
   .footer {
     &__container {
-      padding: 165px 116px 97px 114px;
+      padding: 0 116px 97px 114px;
 
       &-headers {
         &-header {
