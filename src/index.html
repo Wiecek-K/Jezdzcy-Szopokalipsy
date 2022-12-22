@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <title>Jeźdźcy Szopokalipsy</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -16,15 +17,41 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <!-- <include src="./partials/example.html"></include> -->
-    <!-- <include src="./partials/how-its-made.html"></include> -->
-    <include src="./partials/header-hero.html"></include
-    ><include src="./partials/products.html"></include>
+    <include src="./partials/navigation.html"></include>
+    <include src="./partials/header-hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/how-its-made.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/galery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacs.html"></include>
+    <include src="./partials/footer.html"></include>
+
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js"></script>
+    <script src="./mobile-menu.js"></script>
+
+    <!-- SLIDER -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./slider.js"></script>
+    <!-- SLIDER -->
   </body>
 </html>

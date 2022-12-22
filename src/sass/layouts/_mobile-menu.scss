@@ -1,0 +1,133 @@
+.d-none {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 60vh;
+  background-color: #e17992;
+  z-index: 5;
+}
+
+.mobile-menu__close-button {
+  display: flex;
+  justify-content: end;
+  padding-right: 28px;
+  padding-top: 23px;
+  z-index: 9999;
+
+  &:hover,
+  :focus {
+    fill: black;
+  }
+}
+
+.mobile-menu--toggle {
+  fill: #e17992;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu--toggle svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+}
+
+.mobile-menu__button {
+  width: 209px;
+  height: 44px;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    color: #ffffff;
+    transform: scale(1.15);
+
+    transition-property: background-color, color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.mobile-menu--flex-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 23px;
+}
+.mobile-menu__list {
+  list-style-type: none;
+  padding-top: 32px;
+  padding-left: 21px;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  & li {
+    margin-bottom: 22px;
+  }
+}
+////////////////////////////////////////MEDIA REQUEST//////////////////////////////////////////////////////
+
+@media screen and(max-width: 767px) {
+  .mobile-menu {
+    width: 250px;
+    height: 100vh;
+  }
+  .mobile-menu__button {
+    width: 209px;
+    height: 44px;
+  }
+  .mobile-menu__list {
+    padding-left: 21px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .mobile-menu {
+    width: 254px;
+    height: 100vh;
+  }
+  .mobile-menu__button {
+    width: 186px;
+    height: 44px;
+  }
+  .mobile-menu__list {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .mobile-menu {
+    display: none;
+  }
+}
