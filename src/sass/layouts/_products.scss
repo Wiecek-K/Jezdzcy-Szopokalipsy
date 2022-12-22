@@ -295,20 +295,6 @@
     font-size: 16px;
   }
 }
-.products__icecream-details,
-.products__icecoffee-details,
-.products__milkshakes-details {
-  display: none;
-  max-width: 200px;
-
-  @media screen and (min-width: $tablet) {
-    max-width: 198px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 241px;
-  }
-}
 
 /* BUTTON STYLES */
 

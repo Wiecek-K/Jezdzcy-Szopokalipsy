@@ -51,7 +51,7 @@
     &:focus {
       color: #d41443;
 
-      transition-property: color;
+      transition-property: background-color, color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -61,6 +61,10 @@
   display: flex;
   justify-content: flex-end;
   z-index: 2;
+
+  &:hover,
+  :focus {
+  }
 }
 
 .navigation__button {
@@ -79,8 +83,9 @@
   &:focus {
     background-color: #d41443;
     color: #ffffff;
+    transform: scale(1.15);
 
-    transition-property: background-color, color;
+    transition-property: background-color, color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
