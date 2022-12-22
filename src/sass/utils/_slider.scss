@@ -15,11 +15,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  content: '';
-  background-image: url(../images/CustomerReviews/home.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  content: url(../images/CustomerReviews/home.svg);
   width: 17px;
   height: 17px;
-  opacity: 0.75;
 }
