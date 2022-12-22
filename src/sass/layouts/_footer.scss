@@ -46,7 +46,7 @@
           cursor: pointer;
           transition-property: background-color;
           transition-duration: 250ms;
-          transition-timing-function: $cubic-bezier; 
+          transition-timing-function: $cubic-bezier;
           width: 32px;
           height: 32px;
           border-radius: 50%;
@@ -79,7 +79,7 @@
   }
 
   &__border {
-    border-top: 1px solid #e1e1e1;
+    // border-top: 1px solid #e1e1e1;
   }
 
   &__rights {
@@ -140,6 +140,7 @@
       line-height: 1.857;
       padding: 29px 0 18px 0;
       max-width: unset;
+      border-top: 1px solid #e1e1e1;
     }
   }
 }
