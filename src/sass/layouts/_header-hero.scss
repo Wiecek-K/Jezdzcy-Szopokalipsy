@@ -11,8 +11,9 @@
 .hero {
   position: relative;
   // max-width: $mobile;
-  margin: auto;
+  // margin: auto;
   height: 100%;
+  padding: 0;
 }
 .hero-title {
   max-width: 218px;
@@ -235,8 +236,6 @@
 @media screen and (min-width: $desktop) {
   .header {
     height: 665px;
-    padding-left: 115px;
-    padding-right: 115px;
   }
   .hero {
     max-width: $desktop;
@@ -277,7 +276,7 @@
     line-height: 1.3;
   }
   .header-img__elipse {
-    right: 152px;
+    right: 190px;
     top: 15px;
   }
   .header-img__icecream {
@@ -325,6 +324,6 @@
     height: 232px;
     position: absolute;
     bottom: 0;
-    right: -6px;
+    // right: -6px;
   }
 }
