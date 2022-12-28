@@ -5,16 +5,16 @@
   font-family: DM sans;
   font-weight: 500;
   margin-top: 80px;
-  margin-bottom: 170px;
+  margin-bottom: 210px;
   outline: none;
 
   @media screen and (min-width: $tablet) {
     margin-top: 120px;
-    margin-bottom: 190px;
+    margin-bottom: 240px;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 122px;
-    margin-bottom: 175px;
+    margin-bottom: 280px;
   }
 
   &__slide {
@@ -121,10 +121,10 @@
     padding: 0;
     font-size: 14px;
     line-height: $line-height-desktop;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     @media screen and (min-width: $tablet) {
       font-size: 16px;
-      margin-bottom: 35px;
+      // margin-bottom: 35px;
     }
     @media screen and (min-width: $desktop) {
       font-size: 20px;
