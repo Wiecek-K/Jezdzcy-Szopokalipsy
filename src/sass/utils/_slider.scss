@@ -16,6 +16,13 @@
 
 .slick-dots li.slick-active button:before {
   content: url(../images/CustomerReviews/home.svg);
+  color: red;
   width: 17px;
   height: 17px;
+}
+.slick-dots {
+  bottom: -30px;
+  @media screen and (min-width: $tablet) {
+    bottom: -35px;
+  }
 }

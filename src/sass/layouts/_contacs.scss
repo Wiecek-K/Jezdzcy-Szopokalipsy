@@ -126,35 +126,35 @@
   }
 }
 
-.contacts__list-item::before {
-  content: '';
-  position: absolute;
-  background-size: contain;
-  left: 15px;
-  right: 15px;
-  top: -113px;
-  display: block;
-  width: 249px;
-  height: 252px;
+// .contacts__list-item::before {
+//   content: '';
+//   position: absolute;
+//   background-size: contain;
+//   left: 15px;
+//   right: 15px;
+//   top: -113px;
+//   display: block;
+//   width: 249px;
+//   height: 252px;
 
-  @media screen and (min-width: $tablet) {
-    display: block;
-    width: 220px;
-    height: 226px;
-    top: -102px;
-    left: 2px;
-    right: 0;
-  }
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//     width: 220px;
+//     height: 226px;
+//     top: -102px;
+//     left: 2px;
+//     right: 0;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    display: block;
-    width: 335px;
-    height: 335px;
-    top: -210px;
-    left: 19px;
-    right: 19px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     display: block;
+//     width: 335px;
+//     height: 335px;
+//     top: -210px;
+//     left: 19px;
+//     right: 19px;
+//   }
+// }
 
 .contacts__list--e-mail {
   text-decoration: none;
