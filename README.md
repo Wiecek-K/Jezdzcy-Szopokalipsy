@@ -3,8 +3,9 @@ Live version https://wiecek-k.github.io/Jezdzcy-Szopokalipsy/
 Projekt grupowy mający na celu przy użyciu HTML/CSS stworzyć stronę na podstawie dostarczonej makiety
 
 
-## Pliki i folderzy
 
+
+ Pliki i folderzy
 - Wszystkie partials plików styłów powinny być w folderze `src/sass` i importować się w
   `src/sass/main.scss`
 - Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie.
